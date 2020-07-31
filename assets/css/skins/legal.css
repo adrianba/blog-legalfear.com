@@ -441,4 +441,6 @@ div.highlighter-rouge, figure.highlight { color: #586e75; background-color: #faf
 
 .page-title, .entry-title { font-style: normal; }
 
+.page-content p { text-indent: 0.5in; }
+
 /*# sourceMappingURL=legal.css.map */
