@@ -22,7 +22,9 @@ title: LegalFear.com
 email: ade@legalfear.com
 description: >- # this means to ignore newlines until "baseurl:"
   Thoughts and scribbles about the law, technology, and public policy - don't be afraid!
-copyright: "&copy; 2020 Adrian Bateman."
+copyright: >-
+  &copy; 2020 Adrian Bateman. Disclaimer: The posts on this site are provided AS IS with no warranties, and confer no rights.<br>
+  The opinions expressed herein are my own personal opinions and do not represent my employer’s view in any way.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://legalfear.com" # the base hostname & protocol for your site, e.g. http://example.com
 logo: "/assets/logos/LegalFearLogo.svg"
@@ -31,12 +33,12 @@ words_per_minute: 200
 twitter_username: adrianba
 github_username:  adrianba
 footer_links:
+  - title: LinkedIn
+    url: http://www.linkedin.com/in/adrianba
+    icon: fab fa-linkedin
   - title: Twitter
     url: https://twitter.com/adrianba
     icon: fab fa-twitter-square
-  - title: GitHub
-    url: https://github.com/adrianba
-    icon: fab fa-github-square
   - title: Feed
     url: atom.xml
     icon: fas fa-rss-square
