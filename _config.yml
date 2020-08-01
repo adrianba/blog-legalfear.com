@@ -22,8 +22,8 @@ title: LegalFear.com
 email: ade@legalfear.com
 description: >- # this means to ignore newlines until "baseurl:"
   Thoughts and scribbles about the law, technology, and public policy - don't be afraid!
-copyright: >-
-  &copy; 2020 Adrian Bateman.
+#copyright: >-
+#  &copy; 2020 Adrian Bateman.
 disclaimer: >-
     Disclaimer: The posts on this site are provided AS IS with no warranties, and confer no rights.
     The opinions expressed herein are my own personal opinions and do not represent my employer’s view in any way.
