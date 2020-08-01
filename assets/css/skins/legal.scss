@@ -53,3 +53,12 @@ $base0f: #d33682 !default;
 .page-content p {
   text-indent: 0.5in;
 }
+
+.page-disclaimer {
+  margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 2em;
+  max-width: $main-max-width;
+  font-size: 0.75rem;
+}
