@@ -41,3 +41,8 @@ jobs:
 
     - name: List
       run: ls -al && ls -al ./_site
+    
+    - name: Publish
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: chmod +x ./_deploy/deploy.sh && ./_deploy/deploy.sh

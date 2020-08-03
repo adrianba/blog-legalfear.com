@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome!"
-date:   2020-07-30 20:45:47 -0700
+date:   2020-07-31 20:48:47 -0700
 tags: welcome law
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Lacus vel facilisis volutpat est velit egestas dui. Amet est placerat in egestas erat imperdiet sed euismod nisi. Quis hendrerit dolor magna eget. Mi proin sed libero enim sed faucibus. Adipiscing enim eu turpis egestas pretium aenean pharetra magna. Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Sed sed risus pretium quam vulputate dignissim. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Risus in hendrerit gravida rutrum quisque. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Lorem donec massa sapien faucibus et molestie ac feugiat. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet. At augue eget arcu dictum varius.
