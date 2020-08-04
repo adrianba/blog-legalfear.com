@@ -63,7 +63,8 @@ twitter:
 
 # SEO Related
 google_site_verification : "0TTPID5EcYtLWPM7AUPV24x32xDuyYWC5o63ppTY_10"
-bing_site_verification   : "63DB9D179BA14FF88535CF66336C4ED2"
+owner:
+  bing-verify: "63DB9D179BA14FF88535CF66336C4ED2"
 
 
 author:
