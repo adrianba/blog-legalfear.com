@@ -2,47 +2,49 @@ name: Build and deploy
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout source
-      uses: actions/checkout@v2
+      - name: Install dependencies
+        run: sudo apt-get install libxslt-dev libxml2-dev
 
-    - name: Checkout publish
-      uses: actions/checkout@v2
-      with:
-        path: _site
-        ref: publish
+      - name: Checkout source
+        uses: actions/checkout@v2
 
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 2.6
-        bundler-cache: true
-    
-    - name: Cache Jekyll data
-      uses: actions/cache@v2
-      with:
-        path: |
-          .jekyll-cache
-          .jekyll-metadata
-        key: cache-20200803
+      - name: Checkout publish
+        uses: actions/checkout@v2
+        with:
+          path: _site
+          ref: publish
 
-    - name: Build
-      run: JEKYLL_ENV=production bundle exec jekyll build --incremental
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+          bundler-cache: true
 
-    - name: Test
-      run: bundle exec htmlproofer ./_site --disable-external --allow-hash-href --empty-alt-ignore --internal-domains legalfear.com
+      - name: Cache Jekyll data
+        uses: actions/cache@v2
+        with:
+          path: |
+            .jekyll-cache
+            .jekyll-metadata
+          key: cache-20200803
 
-    - name: List
-      run: ls -al && ls -al ./_site
-    
-    - name: Publish
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: chmod +x ./_deploy/deploy.sh && ./_deploy/deploy.sh
+      - name: Build
+        run: JEKYLL_ENV=production bundle exec jekyll build
+
+      - name: Test
+        run: bundle exec htmlproofer ./_site --disable-external --allow-hash-href --empty-alt-ignore --internal-domains legalfear.com
+
+      - name: List
+        run: ls -al && ls -al ./_site
+
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: chmod +x ./_deploy/deploy.sh && ./_deploy/deploy.sh
