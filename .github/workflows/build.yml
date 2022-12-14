@@ -39,7 +39,7 @@ jobs:
         run: JEKYLL_ENV=production bundle exec jekyll build
 
       - name: Test
-        run: bundle exec htmlproofer ./_site --disable-external --allow-hash-href --empty-alt-ignore --internal-domains legalfear.com
+        run: bundle exec htmlproofer ./_site --disable-external --allow-hash-href --ignore-empty-alt --internal-domains legalfear.com --enforce-https=false
 
       - name: List
         run: ls -al && ls -al ./_site
